@@ -1,12 +1,11 @@
 {
 	"name": "electronautoupdate",
 	"productName": "Electron Auto Update",
-	"version": "0.1.1",
+	"version": "v0.1.1",
 	"description": "",
 	"main": "dist/index.js",
 	"repository": "git@github.com:jhunxein/electron-auto-update.git",
 	"scripts": {
-		"start": "tsc && electron-forge start",
 		"watch:tsc": "tsc -w",
 		"watch:dev": "electron .",
 		"pack": "electron-builder --dir",
@@ -25,8 +24,7 @@
 			{
 				"provider": "github",
 				"owner": "jhunxein",
-				"repo": "electron-auto-update",
-				"token": "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"
+				"token": "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"
 			}
 		],
 		"win": {
