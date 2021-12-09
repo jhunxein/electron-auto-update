@@ -1,7 +1,7 @@
 {
 	"name": "electronautoupdate",
 	"productName": "Electron Auto Update",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"description": "",
 	"main": "dist/index.js",
 	"repository": "git@github.com:jhunxein/electron-auto-update.git",
@@ -26,7 +26,7 @@
 				"provider": "github",
 				"owner": "jhunxein",
 				"repo": "electron-auto-update",
-				"token": "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"
+				"token": "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"
 			}
 		],
 		"win": {
