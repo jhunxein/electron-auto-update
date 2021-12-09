@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/no-var-requires */
-require('dotenv').config();
 import { app, BrowserWindow, ipcMain, ipcRenderer } from 'electron';
 import { join } from 'path';
 import { autoUpdater } from 'electron-updater';
