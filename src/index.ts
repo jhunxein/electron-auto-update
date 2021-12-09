@@ -1,37 +1,11 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
-require('dotenv').config();
 import { app, BrowserWindow, ipcMain, ipcRenderer } from 'electron';
 import { join } from 'path';
 import ADODB = require('node-adodb');
 import { autoUpdater } from 'electron-updater';
 
-const app_settings: ISettings = { path: '', adodb: '', allotmenttype: '' };
-
-const isDev = process.env.NODE_ENV === 'development' ? true : false;
-if (isDev) {
-	try {
-		require('electron-reloader')(module, {
-			debug: true,
-			ignore: [
-				'dist/*',
-				'*.json',
-				'out/*',
-				'out',
-				'dist',
-				'eng.traineddata',
-				'build/*',
-				'db/*',
-			],
-			watchRenderer: true,
-		});
-	} catch (error) {
-		ipcRenderer.send('fromMain-errors');
-	}
-}
-
 // app windows
 let mainWindow: BrowserWindow;
-let printWindow: BrowserWindow;
 
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
 if (require('electron-squirrel-startup')) {
@@ -66,7 +40,7 @@ const createWindow = (): void => {
 		app.quit();
 	});
 
-	isDev && mainWindow.webContents.openDevTools();
+	mainWindow.webContents.openDevTools();
 };
 
 // This method will be called when Electron has finished
