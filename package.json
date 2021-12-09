@@ -1,7 +1,7 @@
 {
 	"name": "electronautoupdate",
 	"productName": "Electron Auto Update",
-	"version": "v0.1.1",
+	"version": "v0.1.2",
 	"description": "",
 	"main": "dist/index.js",
 	"repository": "git@github.com:jhunxein/electron-auto-update.git",
