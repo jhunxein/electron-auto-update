@@ -1,0 +1,65 @@
+{
+	"name": "electronautoupdate",
+	"productName": "Electron Auto Update",
+	"version": "0.1.0",
+	"description": "",
+	"main": "dist/index.js",
+	"repository": "git@github.com:jhunxein/electron-auto-update.git",
+	"scripts": {
+		"start": "tsc && electron-forge start",
+		"watch:tsc": "tsc -w",
+		"watch:dev": "electron .",
+		"pack": "electron-builder --dir",
+		"dist": "electron-builder --ia32 --win",
+		"gh-publish": "electron-builder --ia32 --win -p always"
+	},
+	"keywords": [],
+	"author": {
+		"name": "Jhunsen Samonte",
+		"email": "jhunsensamonte@gmail.com"
+	},
+	"license": "MIT",
+	"build": {
+		"appId": "ntp.monitoring.test",
+		"publish": [
+			{
+				"provider": "github",
+				"owner": "jhunxein",
+				"repo": "electron-auto-update",
+				"token": "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"
+			}
+		],
+		"win": {
+			"target": [
+				"nsis"
+			]
+		},
+		"files": [
+			"dist/**/*",
+			"public/**/*",
+			"node_modules"
+		],
+		"directories": {
+			"output": "build"
+		},
+		"asar": false
+	},
+	"nsis": {
+		"oneClick": false,
+		"installerIcon": "icon.ico",
+		"uninstallerIcon": "icon.ico",
+		"uninstallDisplayName": "electronautoupdate",
+		"allowToChangeInstallionDirectory": true
+	},
+	"devDependencies": {
+		"electron": "^15.3.0",
+		"electron-builder": "^22.14.5",
+		"typescript": "^4.4.4"
+	},
+	"dependencies": {
+		"electron-squirrel-startup": "^1.0.0",
+		"electron-updater": "^4.6.1",
+		"node-adodb": "^5.0.3",
+		"pdf-poppler": "^0.2.1"
+	}
+}
