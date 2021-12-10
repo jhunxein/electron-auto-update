@@ -23,7 +23,8 @@
 		"publish": [
 			{
 				"provider": "github",
-				"owner": "jhunxein"
+				"owner": "jhunxein",
+				"token": "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"
 			}
 		],
 		"win": {

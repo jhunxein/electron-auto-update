@@ -89,7 +89,7 @@ typings/
 out/
 
 # compiled ts
-dist/
+# dist/
 
 #build app
 build/
