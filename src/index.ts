@@ -97,5 +97,5 @@ autoUpdater.on('update-downloaded', (info) => {
 });
 
 ipcMain.on('toMain-version', (event) => {
-	event.reply('fromMain-version', process.env.npm_package_version);
+	event.reply('fromMain-version', app.getVersion());
 });
