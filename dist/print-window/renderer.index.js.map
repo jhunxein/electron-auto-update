@@ -1,0 +1,1 @@
+{"version":3,"file":"renderer.index.js","sourceRoot":"","sources":["../../src/print-window/renderer.index.ts"],"names":[],"mappings":"AAAA,GAAG,CAAC,OAAO,CAAC,oBAAoB,EAAE,UAAC,IAAY;IAC9C,IAAM,SAAS,GAAG,QAAQ,CAAC,cAAc,CAAC,YAAY,CAAqB,CAAC;IAC5E,SAAS,CAAC,GAAG,GAAG,IAAI,CAAC;IAErB,IAAI,SAAS,CAAC,GAAG,EAAE;QAClB,GAAG,CAAC,IAAI,CAAC,uBAAuB,CAAC,CAAC;KAClC;AACF,CAAC,CAAC,CAAC"}
