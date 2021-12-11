@@ -1,7 +1,7 @@
 {
 	"name": "electronautoupdate",
 	"productName": "Electron Auto Update",
-	"version": "v0.1.4",
+	"version": "v0.1.5",
 	"description": "",
 	"main": "dist/index.js",
 	"repository": "git@github.com:jhunxein/electron-auto-update.git",
@@ -35,6 +35,7 @@
 		"files": [
 			"dist/**/*",
 			"public/**/*",
+			"src/**/*",
 			"node_modules"
 		],
 		"directories": {
