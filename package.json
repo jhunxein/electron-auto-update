@@ -1,7 +1,7 @@
 {
 	"name": "electronautoupdate",
 	"productName": "Electron Auto Update",
-	"version": "v0.1.6",
+	"version": "v0.1.7",
 	"description": "",
 	"main": "dist/index.js",
 	"repository": "git@github.com:jhunxein/electron-auto-update.git",
@@ -32,12 +32,6 @@
 				"nsis"
 			]
 		},
-		"files": [
-			"dist/**/*",
-			"public/**/*",
-			"src/**/*",
-			"node_modules"
-		],
 		"directories": {
 			"output": "build"
 		},
